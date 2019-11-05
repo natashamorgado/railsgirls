@@ -1,0 +1,7 @@
+image:
+  file: Dockerfile
+tasks:
+  - init: cp -R /railsgirls/ .
+  - command: cd railsgirls/ && EDITOR=vim bundle exec rails credentials:edit && clear
+ports:
+  - port: 3000
